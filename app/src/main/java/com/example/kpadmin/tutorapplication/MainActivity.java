@@ -7,10 +7,24 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    DBHandler dbHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbHandler = new DBHandler(this);
+        if(dbHandler.getTutorCount() == 0) {
+
+
+            for (int i = 0; i < 10; i++) {
+                Tutor_Object temp = new Tutor_Object();
+                temp.setFull_Name(String.valueOf(i));
+                temp.setRating((double) i / 5);
+                dbHandler.addTutor(temp);
+            }
+        }
 
     }
 

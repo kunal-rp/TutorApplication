@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Tutors_for_Course_Activity"></activity>
+        <activity android:name=".Tutor_Profile_Activity"></activity>
     </application>
 
 </manifest>

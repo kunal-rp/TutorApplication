@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 
+import java.util.ArrayList;
+
 /**
  * Created by KP Admin on 10/22/2016.
  */
@@ -77,7 +79,32 @@ public class DBHandler extends SQLiteOpenHelper {
 
             }
         }
+
         return tutor;
+    }
+
+    public ArrayList<Tutor_Object> getallTutors(){
+
+        ArrayList<Tutor_Object> tutors = new ArrayList<Tutor_Object>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selectQuery = "SELECT * FROM " + TABLE_NAME ;
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        c.moveToFirst();
+
+        while (!c.isAfterLast()) {
+            if (c.getString(c.getColumnIndex(COLUMN_TUTOR_NAME)) != null) {
+                Tutor_Object tutor = new Tutor_Object();
+                tutor.setFull_Name(c.getString(c.getColumnIndex(COLUMN_TUTOR_NAME)));
+                tutor.setRating(c.getInt(c.getColumnIndex(COLUMN_TUTOR_RATING)));
+                tutor.setTutor_id(c.getInt(c.getColumnIndex(COLUMN_TUTOR_ID)));
+                tutors.add(tutor);
+                c.moveToNext();
+
+
+            }
+        }
+        return tutors;
     }
 
 

@@ -40,6 +40,12 @@ public class Tutors_for_Class_Adapter extends ArrayAdapter<Tutor_Object>{
         name.setText(current_tutor.getFull_Name());
         rating.setText(String.valueOf(current_tutor.getRating()));
 
+
+
         return customView;
+
+
     }
+
+
 }
