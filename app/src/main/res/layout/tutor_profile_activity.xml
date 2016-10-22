@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+        <TextView
+            android:id="@+id/profile_tutor_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:textSize="50dp"
+            android:text="First Last"
+            android:gravity="center"
+            />
+
+    <TextView
+        android:id="@+id/profile_tutor_rating"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:text="Approval Rating : "
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+
+
+
+
+</LinearLayout>

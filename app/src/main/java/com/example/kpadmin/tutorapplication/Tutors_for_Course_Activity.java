@@ -1,7 +1,9 @@
 package com.example.kpadmin.tutorapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,5 +27,9 @@ public class Tutors_for_Course_Activity extends Activity {
         }
         Tutors_for_Class_Adapter adapter = new Tutors_for_Class_Adapter(this, tutors);
         listView.setAdapter(adapter);
+
+        
     }
+
+
 }
