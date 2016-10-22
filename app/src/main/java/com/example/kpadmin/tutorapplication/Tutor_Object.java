@@ -10,4 +10,19 @@ public class Tutor_Object  {
     private double Rating;
 
 
+    public String getFull_Name() {
+        return Full_Name;
+    }
+
+    public void setFull_Name(String full_Name) {
+        Full_Name = full_Name;
+    }
+
+    public double getRating() {
+        return Rating;
+    }
+
+    public void setRating(double rating) {
+        Rating = rating;
+    }
 }
