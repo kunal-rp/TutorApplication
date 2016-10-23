@@ -31,13 +31,11 @@ public class MainActivity extends AppCompatActivity {
     public void showTutorsForClass(View view){
         Intent intent = new Intent(this, Tutors_for_Course_Activity.class);
         startActivity(intent);
-<<<<<<< HEAD
-=======
     }
 
     public void showUserProfile(View view){
         Intent intent = new Intent(this, UserActivity.class);
         startActivity(intent);
->>>>>>> b1996099f6acd716a929128c9d8e8d187205235e
+
     }
 }

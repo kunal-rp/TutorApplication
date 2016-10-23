@@ -111,10 +111,6 @@ public class DBHandler extends SQLiteOpenHelper {
     public int getTutorCount() {
         SQLiteDatabase db = getReadableDatabase();
         long cnt = DatabaseUtils.queryNumEntries(db, TABLE_NAME);
-<<<<<<< HEAD
-        db.close();
-=======
->>>>>>> b1996099f6acd716a929128c9d8e8d187205235e
         return (int) cnt;
     }
 

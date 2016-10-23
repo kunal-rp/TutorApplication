@@ -21,8 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Overview Tutor List"
         android:onClick="showTutorsForClass"/>
-<<<<<<< HEAD
-=======
+
 
     <Button
         android:layout_width="match_parent"
@@ -30,5 +29,5 @@
         android:text="User Profile"
         android:onClick="showUserProfile"
         android:id="@+id/user_profile" />
->>>>>>> b1996099f6acd716a929128c9d8e8d187205235e
+
 </LinearLayout>
