@@ -5,7 +5,7 @@
     android:layout_margin="10dp">
 
     <TextView
-        android:id="@+id/Tutor_Name"
+        android:id="@+id/overview_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
@@ -13,7 +13,7 @@
         android:textSize="30dp"/>
 
     <TextView
-        android:id="@+id/Rating"
+        android:id="@+id/overview_rating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
