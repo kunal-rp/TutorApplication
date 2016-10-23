@@ -28,4 +28,14 @@
         android:text="User Profile"
         android:onClick="showUserProfile"
         android:id="@+id/user_profile" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universities"
+        android:onClick="showDepartments"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </LinearLayout>

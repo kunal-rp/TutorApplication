@@ -18,6 +18,9 @@
         <activity android:name=".Tutors_for_Course_Activity"></activity>
         <activity android:name=".Tutor_Profile_Activity"></activity>
         <activity android:name=".UserActivity"></activity>
+        <activity android:name=".Courses_Activity"></activity>
+        <activity android:name=".Department_Activity"></activity>
+
     </application>
 
 </manifest>
