@@ -17,10 +17,10 @@
         </activity>
         <activity android:name=".Tutors_for_Course_Activity"></activity>
         <activity android:name=".Tutor_Profile_Activity"></activity>
-<<<<<<< HEAD
-=======
         <activity android:name=".UserActivity"></activity>
->>>>>>> b1996099f6acd716a929128c9d8e8d187205235e
+        <activity android:name=".Courses_Activity"></activity>
+        <activity android:name=".Department_Activity"></activity>
+
     </application>
 
 </manifest>
